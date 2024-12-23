@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lev Skrypnyk</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+         margin: 0;
+         padding: 0;
+         background-color: #1e1e1e;
+         color: #c9d1d9;
+         background-image:
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+         background-size: 20px 20px;
+         background-position: 0 0, 0 0;
+      }
+
+      .container {
+         max-width: 860px;
+         margin: 20px auto;
+         padding: 20px;
+         background: #2d2d2d;
+         border: 1px solid #444;
+         border-radius: 8px;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      header {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+      }
+
+      header img {
+         border-radius: 50%;
+         width: 100px;
+         height: 100px;
+      }
+
+      header h1 {
+         margin: 0;
+         font-size: 24px;
+         color: #ffffff;
+      }
+
+      header p {
+         margin: 0;
+         color: #9ba1a6;
+      }
+
+      section {
+         margin-top: 20px;
+      }
+
+      section h2 {
+         font-size: 20px;
+         margin-bottom: 10px;
+         color: #ffffff;
+      }
+
+      a {
+         color: #58a6ff;
+         text-decoration: none;
+      }
+
+      a:hover {
+         text-decoration: underline;
+      }
+
+      .grid {
+         display: grid;
+         grid-template-columns: 1fr;
+         gap: 15px;
+      }
+
+      .grid-item {
+         border: 2px solid #aeabff;
+         padding: 15px;
+         border-radius: 8px;
+         background: #333;
+         box-shadow: 0 0 10px rgba(174, 171, 255, 0);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .grid-item:hover {
+         transform: translateY(-5px);
+      }
+
+      .grid-item h3 {
+         color: #ffffff;
+      }
+
+      .grid-item p {
+         color: #c9d1d9;
+      }
+
+      ul {
+         list-style-type: disc;
+         margin-left: 0;
+         padding-left: 20px;
+         color: #c9d1d9;
+      }
+
+      .section-content {
+         position: relative;
+         padding-bottom: 20px;
+      }
+
+      .section-content::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 2px;
+         background: rgba(255, 255, 255, 0.3);
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <header style="display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="profile2.jpg" alt="Profile Photo">
+            <div>
+               <h1>Lev Skrypnyk</h1>
+               <p> 3D Environment Artist, UE5 Engineer</p>
+               <p>Director, Project RedBlade</p>
+               <p>
+                  <a href="https://www.artstation.com/hard1e3" style="color: #aeabff;" target="_blank">Artstation</a> |
+                  <a href="https://github.com/levmirage" style="color: #aeabff;" target="_blank">Github</a> |
+                  <a href="https://www.youtube.com/@mirage3dd" style="color: #aeabff;" target="_blank">YouTube</a>
+               </p>
+            </div>
+         </div>
+         <a href="blog.html" style="
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px; /* Увеличен размер текста */
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 16px; /* Увеличен внутренний отступ */
+            border-radius: 6px; /* Более округлые углы */
+            margin-right: 10px; /* Отступ справа от границы */
+            border: 2px solid #aeabff; /* Добавлена обводка */
+            box-shadow: 0 0 10px rgba(174, 171, 255, 0.5); /* Свечение */
+            transition: background 0.3s ease, box-shadow 0.3s ease;"
+            onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.boxShadow='0 0 20px rgba(174, 171, 255, 0.8)';"
+            onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.boxShadow='0 0 10px rgba(174, 171, 255, 0.5)';">
+            My Blog
+         </a>
+
+
+      </header>
+
+      <section>
+         <h2>About</h2>
+         <div class="section-content">
+            <p>Hello! I'm Lev, a Junior 3D Environment Artist with extensive experience in creating high-quality,
+               optimized
+               3D environments for video games. My expertise spans asset creation, lighting, and environmental
+               storytelling, with a strong focus on maintaining performance efficiency across platforms. I have a deep
+               understanding of the full environment creation pipeline, from concept to implementation, and I'm
+               committed
+               to delivering immersive and visually compelling worlds. In addition, I constantly refine my skills in
+               advanced techniques to stay ahead of industry trends and contribute to the success of complex projects.
+            </p>
+         </div>
+      </section>
+
+
+      <section>
+         <h2>Experience</h2>
+         <div class="section-content">
+            <ul>
+               <li>3D Artist at Flexity Games Studio <b>[ 2022 - 2023 ]</b></li>
+               <li>UE5 Engineer at Project RedBlade <b>[ 2023 - 2024 ]</b></li>
+               <li>Freelance <b>[ 2024 - Present ]</b></li>
+            </ul>
+         </div>
+         <div class="section-content">
+            <h2 style="color:white">Skills</h2>
+            <h4 style="color:white">UE5</h4>
+            <ul>
+               <li>Game mechanics development using Blueprints</li>
+               <li>UI/UX design and implementation for various platforms.</li>
+               <li>Environment setup and optimization for performance in Unreal Engine 5</li>
+               <li>Creating and optimizing lighting and post-processing systems for realistic visuals</li>
+               <li>Optimizing asset workflows and managing large-scale environments in Unreal Engine 5.</li>
+            </ul>
+            <h4 style="color:white">3D</h4>
+            <ul>
+               <li>Full pipeline 3D asset creation for games (modeling, UV, baking, texturing)</li>
+               <li>UE5 shaders and texture optimization</li>
+               <li>Proficient in the full game asset pipeline</li>
+               <li>Environment concept art and 3D design creation</li>
+               <li>Strong background in game world design and environmental storytelling</li>
+            </ul>
+         </div>
+      </section>
+
+      <section>
+         <h2>Hobbies</h2>
+         <div class="section-content">
+            <ul>
+               <li>Books</li>
+               <li>Sport</li>
+               <li>Videogames</li>
+               <li>Piano</li>
+            </ul>
+         </div>
+      </section>
+
+      <section>
+         <h2>Contact Me</h2>
+         <div class="section-content">
+            <ul>
+               <li>Email: <b>lev.skrypnyk@gmail.com</b></li>
+               <li>Telegram: <b>levmirage</b></li>
+               <li>Discord: <b>levmirage</b></li>
+            </ul>
+         </div>
+      </section>
+
+      <section>
+         <h2 style="margin-bottom: 20px;">My Games & Projects</h2>
+         <div class="grid" style="margin-bottom: 20px;">
+            <a href="celCores.html" style="text-decoration: none; color: inherit;">
+               <div class="grid-item" style="box-shadow: 0 0px 15px rgba(174, 171, 255, 0.3);">
+                  <h3>Cel Cores</h3>
+                  <p>First-Person Horror in style of PS1 games</p>
+               </div>
+            </a>
+         </div>
+      </section>
+   </div>
+</body>
+
+</html>
